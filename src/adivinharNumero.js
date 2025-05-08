@@ -7,8 +7,19 @@
 // - Retornar `"Acertou!"` se o número gerado for igual ao `palpite`;
 // - Retornar `"Errou! Tente novamente!"` se o palpite estiver incorreto.
 
+
 function adivinharNumero(max, palpite) {
-  // TODO: implementar função
+  max = parseFloat(max)
+  palpite = parseFloat(palpite)
+
+  max = Math.random() * 11
+
+  if (palpite === max) {
+    alert("Acertou!")
+  }
+  else {
+    alert("Errou! Tente novamente!")
+  }
 }
 
 
